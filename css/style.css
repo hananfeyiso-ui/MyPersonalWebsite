@@ -43,6 +43,23 @@ body {
   font-weight: 700;
   color: #15152e;
 }
+.logo img {
+    height: 70px;  /* make the logo taller */
+    width: auto;
+    display: block;
+    filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.3)); /* adds a light shadow for boldness */
+}
+@media (max-width: 768px) {
+    .logo img {
+        height: 60px;  /* slightly smaller for mobile */
+    }
+}
+
+/* Optional: center logo with header items */
+header .logo {
+    display: flex;
+    align-items: center;
+}
 
 .nav-links {
   list-style: none;
@@ -175,6 +192,7 @@ footer {
   font-size: 14px;
   color: #666;
   border-top: 1px solid rgba(0,0,0,0.05);
+  
 }
 
 /* responsive design for tablets */
